@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Box from './components/ex3.1/box1'
+import Quiz from './components/ex3.2/Quiz';
 function App() {
   return (
     <div className="App">
-      <Box />
+      <Quiz />
     </div>
   );
 }

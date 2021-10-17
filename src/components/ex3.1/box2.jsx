@@ -1,6 +1,6 @@
 import react from 'react';
 import Box3 from './box3';
-import "./box.css"
+
 
 
 
