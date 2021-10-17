@@ -1,9 +1,9 @@
 import react from 'react';
 
 const Hello=()=>{
-const data = ["hello", "world"];
+const string = `I love React!`
     return(
-        <div>{data[0]} { data[1]}</div>
+        <div>{string.length}</div>
 )
 }
 
