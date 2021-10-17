@@ -1,4 +1,21 @@
 .App {
   text-align: center;
 }
-
+.container{
+  width: 20vmin;
+  height:35vmin;
+  border :1px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+.links{
+  width: 100%;
+  display: flex;
+  gap:1vmin;
+  justify-content: center;
+}
+.img{
+  width: 20vmin;
+  height: 20vmin;
+  background: url("https://pixabay.com/get/ged236d6b5cc01ad8ad5ab380bb61a623a2d10745e0d67fc0a5232a2a66825384b978b97ee3b09825cddce6f2f62a8245a3a54bee5e30a5e8f23f4cdfbb3fbf52c3d73b77cef9742ed62ab1ba305982ce_1920.jpg")no-repeat center center/cover;
+}

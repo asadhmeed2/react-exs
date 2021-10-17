@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Button from './components/ex4.1/button';
+import CardContainer from './components/ex4.2/cardContainer'
+
 function App() {
   return (
     <div className="App">
-      <Button value="important" weight="900" />
-      <Button value = "not important" weight="300" />
+      <CardContainer/>
     </div>
   );
 }

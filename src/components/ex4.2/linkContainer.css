@@ -1,0 +1,6 @@
+.links{
+  width: 100%;
+  display: flex;
+  gap:1vmin;
+  justify-content: center;
+}
