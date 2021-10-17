@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Hello from './components/ex2-2/ex2-2.1'
+import Hello from './components/ex2-2/ex2-2.2'
 function App() {
   return (
     <div className="App">
