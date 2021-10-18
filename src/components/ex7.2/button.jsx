@@ -4,21 +4,21 @@ import "./button.css"
 class Button extends React.Component {
   constructor() {
     super();
-    this.state = { counter: 0 };
-    
+    this.state = { show: false };
   }
-counterHandler=()=>{
-    this.setState({ counter: this.state.counter+1 });
-}
+  clickHandler =()=>{
+    this.setState({ show: (this.state.show?false:true )}
+    )}
+    
   render() {
     return (
       <div className="buttonContainer">
         <input
           type="button"
-          value="add to counter"
-          onClick={this.counterHandler}
+          value="show"
+          onClick={this.clickHandler}
         />
-        <div className="counterOutput">{this.state.counter}</div>
+        <div id="box" className={this.state.show?'show':'hide'}></div>
       </div>
     );
   }
