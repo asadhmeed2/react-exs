@@ -1,0 +1,5 @@
+.buttonContainer{
+    width:10vw;
+    display: flex;
+    justify-content: space-around;
+}

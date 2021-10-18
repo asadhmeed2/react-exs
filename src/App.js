@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-import Box from './components/ex6.1/box1'
+import Counter from './components/ex7.1/counter'
 
 // function App() {
 //   return (
@@ -16,7 +16,7 @@ class App extends React.Component {
   }
 render() {
 return <div className="App">
-  <Box></Box>
+  <Counter/>
 </div>
 }
 }
