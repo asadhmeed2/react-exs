@@ -1,13 +1,23 @@
 // import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import CardContainer from './components/ex4.2/cardContainer'
+import Box from './components/ex6.1/box1'
 
-function App() {
-  return (
-    <div className="App">
-      <CardContainer/>
-    </div>
-  );
+// function App() {
+//   return (
+//     <div className="App">
+//       <Box></Box>
+//     </div>
+//   );
+// }
+class App extends React.Component {
+  constructor() {
+    super();
+  }
+render() {
+return <div className="App">
+  <Box></Box>
+</div>
 }
-
+}
 export default App;
