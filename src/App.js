@@ -4,7 +4,8 @@ import './App.css';
 // import Button from './components/ex7.1/counter';
 // import FavoriteColor from './components/ex8.1/favoriteColor';
 // import BoxContainer from './components/ex8.2/boxContainer';
-import BoxContainer from './components/ex8.3/boxContainer';
+// import BoxContainer from './components/ex8.3/boxContainer';
+import SpinnerContainer from './components/ex9.1/spinnerContainer';
 
 // function App() {
 //   return (
@@ -21,7 +22,8 @@ render() {
 return <div className="App">
   {/* <Button/> */}
   {/* <FavoriteColor/> */}
-  <BoxContainer/>
+  {/* <BoxContainer/> */}
+  <SpinnerContainer/>
 </div>
 }
 }

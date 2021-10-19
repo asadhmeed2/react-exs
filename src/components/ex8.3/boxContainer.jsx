@@ -1,5 +1,5 @@
 import React from "react";
-import "./boxContainer.css";
+import "./spinnerContainer.css";
 class BoxContainer extends React.Component {
   constructor() {
     super();
