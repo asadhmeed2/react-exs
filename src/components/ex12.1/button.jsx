@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './button.css'
 
 
 
@@ -10,7 +10,7 @@ export default class Button extends React.Component {
 
     render() {
         return (
-            <input type="button" value={"Get joke"} id="joke" onClick={this.props.getJoke}/>
+            <input type="button" value={"Get joke"} id="joke-btn" onClick={this.props.getJoke}/>
         )
     }
 }

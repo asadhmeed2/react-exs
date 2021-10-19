@@ -6,7 +6,7 @@ import './chuckNorris.css'
 export default class ChuckNorris extends React.Component {
     constructor() {
     super();
-    this.state = { jokes: ""};
+    this.state = { jokes: "" , img:""};
     }
     getJoke=async()=>{
          try {
@@ -14,7 +14,7 @@ export default class ChuckNorris extends React.Component {
              await fetch("https://api.chucknorris.io/jokes/random")
            ).json();
        console.log(data);
-           this.setState({ jokes: data.value });
+           this.setState({ jokes: data.value, img: data.icon_url });
          } catch (err) {
            console.log(err);
          }
@@ -25,10 +25,16 @@ export default class ChuckNorris extends React.Component {
     }
     render() {
         return (
-            <div className="chuckNorris">
-                <Button getJoke={this.getJoke}/>
-                <div className="jockText">{this.state.jokes}</div>
-            </div>
-        )
+          <div className="chuckNorris">
+            <div
+              className="icon"
+              style={{
+                background: `url(${this.state.img}) no-repeat center center/cover`,
+              }}
+            ></div>
+            <Button getJoke={this.getJoke} />
+            <div className="jockText">{this.state.jokes}</div>
+          </div>
+        );
     }
 }
