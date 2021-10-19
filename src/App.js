@@ -1,7 +1,9 @@
 // import logo from './logo.svg';
 import React from 'react';
 import './App.css';
-import Button from './components/ex7.1/counter';
+// import Button from './components/ex7.1/counter';
+
+import FavoriteColor from './components/ex8.1/favoriteColor';
 
 // function App() {
 //   return (
@@ -16,7 +18,8 @@ class App extends React.Component {
   }
 render() {
 return <div className="App">
-  <Button/>
+  {/* <Button/> */}
+  <FavoriteColor/>
 </div>
 }
 }
