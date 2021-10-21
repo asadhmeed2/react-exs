@@ -1,17 +1,17 @@
 import React from 'react';
-import './button.css'
-
 
 
 export default class Button extends React.Component {
+
     constructor(props) {
         super(props);
-        this.getJoke = this.props.getJoke;
+        this.state = {color: this.props.color}
     }
+
 
     render() {
         return (
-            <input type="button" value={"Get joke"} id="joke-btn" onClick={this.getJoke}/>
+            <input type="button" value={this.state.color} onClick={(e)=>this.props.onClick(e)} style = {{background:this.state.color}}/>
         )
     }
 }

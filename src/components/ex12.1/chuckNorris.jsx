@@ -6,7 +6,7 @@ import './chuckNorris.css'
 export default class ChuckNorris extends React.Component {
     constructor() {
     super();
-    this.state = { jokes: "" , img:"",dataByCategory:[] ,category:"all", categories: []};
+    this.state = { jokes: "" , img:"",category:"all", categories: []};
     }
     getJoke=async()=>{
          try {
