@@ -8,6 +8,7 @@ import './App.css';
 // import SpinnerContainer from './components/ex9.1/spinnerContainer';
 // import ChuckNorris from './components/ex12.1/chuckNorris';
 // import ButtonContainer from './components/ex11.1/buttonContainer';
+import CheckboxContainer from './components/ex11.2/checkBoxContainer'
 
 // function App() {
 //   return (
@@ -28,6 +29,7 @@ class App extends React.Component {
       {/* <SpinnerContainer/> */}
       {/* <ChuckNorris/> */}
       {/* <ButtonContainer /> */}
+      <CheckboxContainer/>
     </div>
   }
 }
