@@ -5,9 +5,6 @@ import "./checkBoxContainer.css"
 
 
 export default class CheckBoxContainer extends React.Component {
-constructor() {
-    super();
-}
 
 render() {
     return (

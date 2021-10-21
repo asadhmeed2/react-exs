@@ -8,7 +8,8 @@ import './App.css';
 // import SpinnerContainer from './components/ex9.1/spinnerContainer';
 // import ChuckNorris from './components/ex12.1/chuckNorris';
 // import ButtonContainer from './components/ex11.1/buttonContainer';
-import CheckboxContainer from './components/ex11.2/checkBoxContainer'
+// import CheckboxContainer from './components/ex11.2/checkBoxContainer'
+import Survey from './components/ex11.3/survey';
 
 // function App() {
 //   return (
@@ -18,9 +19,7 @@ import CheckboxContainer from './components/ex11.2/checkBoxContainer'
 //   );
 // }
 class App extends React.Component {
-  constructor() {
-    super();
-  }
+
   render() {
     return <div className="App">
       {/* <Button/> */}
@@ -29,7 +28,8 @@ class App extends React.Component {
       {/* <SpinnerContainer/> */}
       {/* <ChuckNorris/> */}
       {/* <ButtonContainer /> */}
-      <CheckboxContainer/>
+      {/* <CheckboxContainer/> */}
+      <Survey/>
     </div>
   }
 }
