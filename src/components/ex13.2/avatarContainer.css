@@ -1,0 +1,7 @@
+.avatarContainer {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+  gap: 3vmin;
+  justify-content:center;
+}

@@ -10,7 +10,8 @@ import './App.css';
 // import ButtonContainer from './components/ex11.1/buttonContainer';
 // import CheckboxContainer from './components/ex11.2/checkBoxContainer'
 // import Survey from './components/ex11.3/survey';
-import MessageContainer from './components/ex13.1/massaging/messageContainer';
+// import MessageContainer from './components/ex13.1/massaging/messageContainer';
+import Main from './components/ex13.2/main'
 
 // function App() {
 //   return (
@@ -31,7 +32,8 @@ class App extends React.Component {
       {/* <ButtonContainer /> */}
       {/* <CheckboxContainer/> */}
       {/* <Survey /> */}
-      <MessageContainer />
+      {/* <MessageContainer /> */}
+      <Main/>
     </div>
   }
 }
