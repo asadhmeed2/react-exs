@@ -1,0 +1,26 @@
+.nav ul {
+  display: flex;
+  gap: 1vw;
+  list-style: none;
+}
+.mainNav {
+  background: gray;
+  width: 100%;
+  color: aliceblue;
+}
+.mainLink {
+  color: aliceblue;
+}
+.productNavLink {
+  color: black;
+}
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
+.nav .link {
+  text-decoration: none;
+}
+.nav .link:hover {
+  text-decoration: underline;
+}

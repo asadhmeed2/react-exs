@@ -11,7 +11,9 @@ import './App.css';
 // import CheckboxContainer from './components/ex11.2/checkBoxContainer'
 // import Survey from './components/ex11.3/survey';
 // import MessageContainer from './components/ex13.1/massaging/messageContainer';
-import Main from './components/ex13.2/main'
+// import Main from './components/ex13.2/main'
+import Index from './components/ex16.1/index'
+
 
 // function App() {
 //   return (
@@ -33,7 +35,8 @@ class App extends React.Component {
       {/* <CheckboxContainer/> */}
       {/* <Survey /> */}
       {/* <MessageContainer /> */}
-      <Main/>
+      {/* <Main/> */}
+      <Index />
     </div>
   }
 }
