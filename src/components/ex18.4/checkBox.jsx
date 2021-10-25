@@ -6,13 +6,9 @@ const CheckBox = () => {
   const [checkedData, setCheckData] = React.useState([]);
 
   const onDeleteBtnClick = (e) => {
-    checkedData.map((el) => {
-      el.checked = false;
-      return el;
-    });
     let tempData2 = [...data];
     checkedData.map((checked) => {
-      tempData2 = tempData2.filter((el) => el !== checked.name);
+      tempData2 = tempData2.filter((el) => el !== checked);
     return tempData2;
     });
     setData(tempData2);
@@ -24,7 +20,7 @@ const CheckBox = () => {
   const onCheckboxChecked = (e) => {
     let tempcheckedData = [...checkedData];
     if (e.target.checked) {
-      tempcheckedData = [...tempcheckedData, e.target];
+      tempcheckedData = [...tempcheckedData, e.target.name];
     } else {
       tempcheckedData = tempcheckedData.filter(
         (el) => el.name !== e.target.name
@@ -43,7 +39,7 @@ const CheckBox = () => {
               <input
                 type="checkbox"
                 name={text}
-                defaultChecked={false}
+                checked={checkedData.includes(text)}
                 id={text}
                 onClick={onCheckboxChecked}
               />
