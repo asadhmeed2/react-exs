@@ -9,6 +9,7 @@ const Countries = () => {
   useEffect(async () => {
     let data = await (await fetch(" https://restcountries.com/v2/all")).json();
     setCountries(Array.from(data));
+    setFilteredCounteries(Array.from(data));
   }, []);
   const onInputChange = (value) => {
     setSearchedText(value);

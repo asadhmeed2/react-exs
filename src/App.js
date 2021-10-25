@@ -17,7 +17,8 @@ import './App.css';
 // import ToDoContainer from './components/ex18.2/toDo'
 // import CheckBox from './components/ex18.4/checkBox'
 // import Movie from './components/ex19.1/movie'
-import Countries from './components/ex19.2/countries'
+// import Countries from './components/ex19.2/countries'
+import NewsSearch from './components/ex19.3/newsSearch'
 
 
 
@@ -39,7 +40,8 @@ function App() {
       {/* <ToDoContainer /> */}
       {/* <CheckBox/> */}
       {/* <Movie/> */}
-      <Countries/>
+      {/* <Countries/> */}
+      <NewsSearch />
     </div>
   );
 }
