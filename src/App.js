@@ -16,7 +16,8 @@ import './App.css';
 // import TextHider from './components/ex18.1/textHider'
 // import ToDoContainer from './components/ex18.2/toDo'
 // import CheckBox from './components/ex18.4/checkBox'
-import Movie from './components/ex19.1/movie'
+// import Movie from './components/ex19.1/movie'
+import Countries from './components/ex19.2/countries'
 
 
 
@@ -37,7 +38,8 @@ function App() {
       {/* <TextHider text={'asad hmeed'} length={3} /> */}
       {/* <ToDoContainer /> */}
       {/* <CheckBox/> */}
-      <Movie/>
+      {/* <Movie/> */}
+      <Countries/>
     </div>
   );
 }
