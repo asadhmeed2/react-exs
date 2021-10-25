@@ -13,20 +13,14 @@ import './App.css';
 // import MessageContainer from './components/ex13.1/massaging/messageContainer';
 // import Main from './components/ex13.2/main'
 // import Index from './components/ex16.1/index'
-import TextHider from './components/ex18.1/textHider'
+// import TextHider from './components/ex18.1/textHider'
+import ToDoContainer from './components/ex18.2/toDo'
 
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <Box></Box>
-//     </div>
-//   );
-// }
-class App extends React.Component {
 
-  render() {
-    return <div className="App">
+function App() {
+  return (
+    <div className="App">
       {/* <Button/> */}
       {/* <FavoriteColor/> */}
       {/* <BoxContainer/> */}
@@ -38,8 +32,11 @@ class App extends React.Component {
       {/* <MessageContainer /> */}
       {/* <Main/> */}
       {/* <Index /> */}
-      <TextHider text={'asad hmeed'} length={3} />
+      {/* <TextHider text={'asad hmeed'} length={3} /> */}
+      <ToDoContainer />
+
     </div>
-  }
+  );
 }
+
 export default App;

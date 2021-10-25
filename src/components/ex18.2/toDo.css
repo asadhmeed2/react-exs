@@ -1,0 +1,12 @@
+.note {
+  display: flex;
+  gap: 1vmax;
+}
+.cross {
+    text-align: center;
+  width: 2vmax;
+  height: 2vmax;
+  font-weight: 900;
+  border-radius: 50%;
+  cursor: pointer;
+}
