@@ -14,7 +14,8 @@ import './App.css';
 // import Main from './components/ex13.2/main'
 // import Index from './components/ex16.1/index'
 // import TextHider from './components/ex18.1/textHider'
-import ToDoContainer from './components/ex18.2/toDo'
+// import ToDoContainer from './components/ex18.2/toDo'
+import CheckBox from './components/ex18.4/checkBox'
 
 
 
@@ -33,7 +34,8 @@ function App() {
       {/* <Main/> */}
       {/* <Index /> */}
       {/* <TextHider text={'asad hmeed'} length={3} /> */}
-      <ToDoContainer />
+      {/* <ToDoContainer /> */}
+      <CheckBox/>
 
     </div>
   );
