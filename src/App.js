@@ -12,7 +12,8 @@ import './App.css';
 // import Survey from './components/ex11.3/survey';
 // import MessageContainer from './components/ex13.1/massaging/messageContainer';
 // import Main from './components/ex13.2/main'
-import Index from './components/ex16.1/index'
+// import Index from './components/ex16.1/index'
+import TextHider from './components/ex18.1/textHider'
 
 
 // function App() {
@@ -36,7 +37,8 @@ class App extends React.Component {
       {/* <Survey /> */}
       {/* <MessageContainer /> */}
       {/* <Main/> */}
-      <Index />
+      {/* <Index /> */}
+      <TextHider text={'asad hmeed'} length={3} />
     </div>
   }
 }

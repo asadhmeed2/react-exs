@@ -1,0 +1,10 @@
+.showHide {
+  color: blue;
+  cursor: pointer;
+}
+.showHide:hover {
+  text-decoration: underline;
+}
+.textContainer {
+  margin-left: 2vmax;
+}
