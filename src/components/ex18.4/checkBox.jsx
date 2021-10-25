@@ -34,6 +34,8 @@ const CheckBox = () => {
   };
   return (
     <div className="checkBoxContainer">
+      <DeleteBtn onBtnClick={onDeleteBtnClick} text="Delete" />
+      <DeleteBtn onBtnClick={onResetBtnClick} text="Reset" />
       {data.map((text, i) => {
         return (
           <div key={i} className="checkBox">
@@ -50,8 +52,6 @@ const CheckBox = () => {
           </div>
         );
       })}
-      <DeleteBtn onBtnClick={onDeleteBtnClick} text="Delete" />
-      <DeleteBtn onBtnClick={onResetBtnClick} text="Reset" />
     </div>
   );
 };
