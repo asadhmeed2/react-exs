@@ -15,26 +15,39 @@ export const Croud = () => {
     setUsers(usersData.data);
   };
   const onDeleteBtnClick = async (id) => {
-    const newUsers = users.filter((user) => user.id !== id);
-    setUsers(newUsers);
-    await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
+    try {
+      const newUsers = users.filter((user) => user.id !== id);
+      setUsers(newUsers);
+      await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
+    } catch (e) {
+      console.log(e);
+    }
   };
   const onAddClick = async (usersData) => {
-    const response = await axios.post(
-      `https://jsonplaceholder.typicode.com/users/`,
-      usersData
-    );
-    if (response.status === 201) {
-      usersData.id = 1;
-      let usersNewData = [...users, usersData];
-      setUsers(usersNewData);
+    try {
+      const response = await axios.post(
+        `https://jsonplaceholder.typicode.com/users/`,
+        usersData
+      );
+      if (response.status === 201) {
+        usersData.id = 1;
+        let usersNewData = [...users, usersData];
+        setUsers(usersNewData);
+      }
+    } catch (e) {
+      console.log(e);
     }
   };
 
   return (
     <div className="crud">
       <div className="formAddUser">
-        <AddUser title={"Add"} onAddClick={onAddClick} />
+        <AddUser
+          title={"Add"}
+          onAddClick={onAddClick}
+          value={"Clean"}
+          onSecondBtnClick={() => {}}
+        />
       </div>
       {users ? (
         <div className="users">

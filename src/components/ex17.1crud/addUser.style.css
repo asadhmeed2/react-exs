@@ -1,4 +1,13 @@
-.user form{
+.userForm form{
     display: flex;
     flex-direction: column;
+}
+.userForm{
+     padding: 2vmax;
+  background: rgba(5, 5, 5,0.8);
+  color: aliceblue;
+    border-radius: 15px;
+  padding: 0.8vmax;
+  min-width: 15vmax;
+  min-height: 12vmax;
 }

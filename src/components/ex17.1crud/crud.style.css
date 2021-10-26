@@ -1,10 +1,16 @@
 .crud {
   display: flex;
 }
+.formAddUser {
+  padding: 2vmax;
+  background: rgba(5, 5, 5,0.8)
+}
 .users {
-  max-width: 65vw;
+  max-width: 54vw;
   display: flex;
   flex-wrap: wrap;
   gap: 2vmax;
-  margin: 2vmax;
+
+  background: whitesmoke;
+  padding: 2vmax;
 }

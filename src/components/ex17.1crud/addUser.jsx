@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./addUser.style.css";
-export const AddUser = ({title, onAddClick }) => {
+export const AddUser = ({ title, onAddClick, value, onSecondBtnClick }) => {
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -17,9 +17,9 @@ export const AddUser = ({title, onAddClick }) => {
     setData(userData);
   };
   return (
-    <div className="user">
+    <div className="userForm">
       <form action="" onSubmit={onFormSubmit}>
-        <h1 className="addHeader">{title} User</h1>
+        <h2 className="addHeader">{title} User</h2>
         <label htmlFor="name">Name :</label>
         <input type="text" name="name" onChange={onInputChange} />
         <label htmlFor="username">Username :</label>
@@ -29,6 +29,12 @@ export const AddUser = ({title, onAddClick }) => {
         <label htmlFor="password">Password :</label>
         <input type="password" name="password" onChange={onInputChange} />
         <input type="submit" value="Confirm" name="add" />
+      <input
+        type="button"
+        value={value}
+        name="add"
+        onClick={onSecondBtnClick}
+      />
       </form>
     </div>
   );

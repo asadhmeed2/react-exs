@@ -1,0 +1,13 @@
+.userData {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
+  color: aliceblue;
+  border-radius: 15px;
+  padding: 0.8vmax;
+  min-width: 15vmax;
+  min-height: 12vmax;
+}
+.user {
+  transition: all 0.5s ease-in-out;
+}
