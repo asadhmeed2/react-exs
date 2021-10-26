@@ -4,8 +4,7 @@ import { User } from "./user";
 import { AddUser } from "./addUser";
 import "./crud.style.css";
 export const Croud = () => {
-  const [users, setUsers] = useState([]);
-
+  const [users, setUsers] = useState(null);
   useEffect(() => {
     getUsers();
   }, []);
@@ -18,9 +17,7 @@ export const Croud = () => {
   const onDeleteBtnClick = async (id) => {
     const newUsers = users.filter((user) => user.id !== id);
     setUsers(newUsers);
-     await axios.delete(
-      `https://jsonplaceholder.typicode.com/users/${id}`
-    );
+    await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
   };
   const onAddClick = async (usersData) => {
     const response = await axios.post(
@@ -37,22 +34,26 @@ export const Croud = () => {
   return (
     <div className="crud">
       <div className="formAddUser">
-        <AddUser title={'Add'} onAddClick={onAddClick} />
+        <AddUser title={"Add"} onAddClick={onAddClick} />
       </div>
-      <div className="users">
-        {users.map((user) => {
-          return (
-            <User
-              key={user.id}
-              name={user.name}
-              email={user.email}
-              userName={user.username}
-              id={user.id}
-              onClick={onDeleteBtnClick}
-            />
-          );
-        })}
-      </div>
+      {users ? (
+        <div className="users">
+          {users.map((user) => {
+            return (
+              <User
+                key={user.id}
+                name={user.name}
+                email={user.email}
+                userName={user.username}
+                id={user.id}
+                onClick={onDeleteBtnClick}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        "loading..."
+      )}
     </div>
   );
 };
