@@ -15,10 +15,11 @@ import './App.css';
 // import Index from './components/ex16.1/index'
 // import TextHider from './components/ex18.1/textHider'
 // import ToDoContainer from './components/ex18.2/toDo'
-import CheckBox from './components/ex18.4/checkBox'
+// import CheckBox from './components/ex18.4/checkBox'
 // import Movie from './components/ex19.1/movie'
 // import Countries from './components/ex19.2/countries'
 // import NewsSearch from './components/ex19.3/newsSearch'
+import { Croud } from './components/ex17.1crud/crud'
 
 
 
@@ -38,10 +39,11 @@ function App() {
       {/* <Index /> */}
       {/* <TextHider text={'asad hmeed'} length={3} /> */}
       {/* <ToDoContainer /> */}
-      <CheckBox/>
+      {/* <CheckBox/> */}
       {/* <Movie/> */}
       {/* <Countries/> */}
       {/* <NewsSearch /> */}
+      <Croud />
     </div>
   );
 }

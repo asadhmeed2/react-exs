@@ -1,0 +1,10 @@
+.crud {
+  display: flex;
+}
+.users {
+  max-width: 65vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmax;
+  margin: 2vmax;
+}
